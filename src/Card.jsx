@@ -2,36 +2,52 @@ import shazam from './assets/shazam.svg'
 import chat from './assets/chat.svg'
 import brain from './assets/brain.svg'
 import eye from './assets/eye.svg'
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 
 
 function Card() {
-    const [count1, setCount1] = useState(0);
-    const [count2, setCount2] = useState(0);
-    const [count3, setCount3] = useState(0);
-    const [count4, setCount4] = useState(0);
-    let [count5, setCount5] = useState(0);
+    const [count1, setCount1] = useState(parseInt(localStorage.getItem('count1')) || 0);
+    const [count2, setCount2] = useState(parseInt(localStorage.getItem('count2')) || 0);
+    const [count3, setCount3] = useState(parseInt(localStorage.getItem('count3')) || 0);
+    const [count4, setCount4] = useState(parseInt(localStorage.getItem('count4')) || 0);
+    let [count5, setCount5] =   useState(parseInt(localStorage.getItem('count5')) || 0);
 
     function handleClick1() {
         setCount1(count1 + 1);
+        localStorage.setItem('list', JSON.stringify(count1))
     }
 
     function handleClick2() {
         setCount2(count2 + 1);
+        localStorage.setItem('list', JSON.stringify(count2))
     }
 
     function handleClick3() {
         setCount3(count3 + 1);
+        localStorage.setItem('list', JSON.stringify(count3))
+
     }
 
     function handleClick4() {
         setCount4(count4 + 1);
+        localStorage.setItem('list', JSON.stringify(count4))
+
     }
     function click() {
         count5 = (count1 + count2 + count3 + count4) / 4
         setCount5(count5);
+        localStorage.setItem('list', JSON.stringify(count1))
+
     }
+
+    useEffect(() => {
+        localStorage.setItem('count1', count1);
+        localStorage.setItem('count2', count2);
+        localStorage.setItem('count3', count3);
+        localStorage.setItem('count4', count4);
+        localStorage.setItem('count5', count5);
+    }, [count1, count2, count3, count4, count5]);
     return (
         <div className='wrapper'>
             <div className="card">
