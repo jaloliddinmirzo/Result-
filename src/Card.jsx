@@ -15,30 +15,22 @@ function Card() {
 
     function handleClick1() {
         setCount1(count1 + 1);
-        localStorage.setItem('list', JSON.stringify(count1))
     }
 
     function handleClick2() {
         setCount2(count2 + 1);
-        localStorage.setItem('list', JSON.stringify(count2))
     }
 
     function handleClick3() {
         setCount3(count3 + 1);
-        localStorage.setItem('list', JSON.stringify(count3))
-
     }
 
     function handleClick4() {
         setCount4(count4 + 1);
-        localStorage.setItem('list', JSON.stringify(count4))
-
     }
     function click() {
         count5 = (count1 + count2 + count3 + count4) / 4
         setCount5(count5);
-        localStorage.setItem('list', JSON.stringify(count1))
-
     }
 
     useEffect(() => {
