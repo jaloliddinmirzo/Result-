@@ -1,0 +1,213 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+
+
+html {
+  height: 100%;
+  scroll-behavior: initial;
+}
+
+body {
+  height: 100%;
+  user-select: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  display: inline-block;
+  background-color: transparent;
+}
+
+input {
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+img {
+  display: flex;
+}
+
+ul {
+  list-style: none;
+}
+
+
+body {
+  font-family: 'Hanken Grotesk', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 31px;
+  color: #CAC9FF;
+  background-color: #ECF2FF;
+  display: flex;
+  align-items: center;
+}
+
+.wrapper {
+  width: min(100%, 736px);
+  display: flex;
+  background: #FFFFFF;
+  box-shadow: 0px 30px 60px rgba(61, 108, 236, 0.15);
+  border-radius: 32px;
+  margin: 0 auto;
+}
+
+.card {
+  background: linear-gradient(180deg, #7755FF 0%, #6943FF 0.01%, #2F2CE9 100%);
+  border-radius: 32px;
+  padding: 38px 54px 54px;
+  text-align: center;
+  width: min(100%, 368px);
+}
+
+.h1 {
+  margin-bottom: 35px;
+}
+
+.oval {
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 50%;
+  background: linear-gradient(180deg, #4D21C9 0%, rgba(37, 33, 201, 0) 100%, rgba(37, 33, 201, 0) 100%);
+  font-weight: 800;
+  font-size: 35px;
+  line-height: 72px;
+  color: #FFFFFF;
+  margin-bottom: 28px;
+  cursor: pointer;
+}
+
+
+
+.oval span {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 23px;
+  opacity: 0.52;
+  margin: 0 auto;
+  margin-top: 4px;
+}
+
+.title {
+  color: #FFFFFF;
+  margin-bottom: 14px;
+}
+
+.text {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 23px;
+}
+
+/* info */
+
+.info {
+  padding: 38px 40px;
+}
+
+.info h1 {
+  font-size: 24px;
+  line-height: 31px;
+  color: #303B59;
+  margin-bottom: 28px;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.item {
+  display: flex;
+  width: max(100%, 288px);
+  display: flex;
+  padding: 17px 16px 16px 20px;
+  font-size: 18px;
+  line-height: 23px;
+  text-align: right;
+  color: #303B59;
+  border-radius: 12px;
+  justify-content: space-between;
+
+}
+
+.item div {
+  display: flex;
+  gap: 16px;
+}
+
+.shazam {
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)), #FF5555;
+  color: #FF5555;
+}
+
+dir {
+  display: flex;
+  gap: 8px;
+  color: #303B59;
+}
+
+dir p {
+  opacity: 0.5;
+}
+
+.brain {
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)), #FFB21E;
+  color: #FFB21E;
+
+}
+
+
+
+.chat {
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)), #00BB8F;
+  color: #00BB8F;
+}
+
+
+.eye {
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)), #1125D6;
+  color: #1125D6;
+  margin-bottom: 41px;
+
+}
+
+.button {
+  width: 100%;
+  padding: 16px 107px;
+  background: #303B59;
+  border-radius: 128px;
+  font-size: 18px;
+  line-height: 23px;
+  color: #FFFFFF;
+  margin: 0 auto;
+}
+
+.button:active{
+  background: linear-gradient(180deg, #7755FF 0%, #6943FF 0.01%, #2F2CE9 100%);
+}
+
+#root {
+  margin: 0 auto;
+}
+
+/* info end*/
