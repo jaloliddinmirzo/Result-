@@ -72,11 +72,7 @@ function Card() {
                     {cards.map(card =>
                         <Item
                             key={card.id}
-                            id={card.id}
-                            title={card.title}
-                            color={card.color}
-                            icon={card.icon}
-                            score={card.score}
+                            {...card}
                             setCards={setCards}
                         ></Item>)}
                     <a href='#' onClick={click} className='button'>Continue</a>
