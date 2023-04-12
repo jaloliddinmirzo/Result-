@@ -79,8 +79,6 @@ function Card() {
                             score={card.score}
                             setCards={setCards}
                         ></Item>)}
-
-
                     <a href='#' onClick={click} className='button'>Continue</a>
                 </ul>
             </div>

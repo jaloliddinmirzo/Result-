@@ -176,9 +176,10 @@ dir p {
   line-height: 23px;
   color: #FFFFFF;
   margin: 0 auto;
+  text-align: center;
 }
 
-.button:active{
+.button:active {
   background: linear-gradient(180deg, #7755FF 0%, #6943FF 0.01%, #2F2CE9 100%);
 }
 
@@ -187,3 +188,36 @@ dir p {
 }
 
 /* info end*/
+
+
+/* media */
+
+@media screen and (max-width: 724px) {
+  .wrapper {
+    flex-direction: column;
+  }
+
+  .card {
+    margin-top: 240px;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  body {
+    font-size: 14px;
+  }
+
+  .card {
+    width: 100vw;
+    padding: 24px 54px 54px;
+
+  }
+
+  .info .item {
+    width: 80vw;
+  }
+  .info{
+    padding: 24px ;
+  }
+}
