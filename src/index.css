@@ -155,10 +155,7 @@ body {
   gap: 16px;
 }
 
-.shazam {
-  background: linear-gradient(0deg, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)), #FF5555;
-  color: #FF5555;
-}
+
 
 dir {
   display: flex;
@@ -168,27 +165,6 @@ dir {
 
 dir p {
   opacity: 0.5;
-}
-
-.brain {
-  background: linear-gradient(0deg, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)), #FFB21E;
-  color: #FFB21E;
-
-}
-
-
-
-.chat {
-  background: linear-gradient(0deg, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)), #00BB8F;
-  color: #00BB8F;
-}
-
-
-.eye {
-  background: linear-gradient(0deg, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)), #1125D6;
-  color: #1125D6;
-  margin-bottom: 41px;
-
 }
 
 .button {
